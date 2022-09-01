@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quotes</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="post">
+        <q class="quotes"></q>
+        <button class="btn">Random Quotes</button>
+    </div>
+
+    <script>
+        const quotes = [
+            'Life is 10% what happens to you and 90% how you react to it',
+            'It’s does not matter how slowly you go as long as you do not stop',
+            'The way to get started is to quit talking and start doing',
+            'Keep your eyes on the stars and your feet on the ground',
+            'You should always be learning. If you’re the smartest person in the room, you’re in the wrong place',
+            'Do the difficult things why they are easy and do the great things why they are small. A journey of a thousand miles must begin with a singer step',
+            'Do you want to know who you are? Don’t ask. Act! Action will delineate and define you',
+            'The man who removes a mountain begins by carrying away small stones',
+            'Can anything be sadder than work left unfinished? Yes, work never begun',
+            'In the dim background of mind we know what we ought to be doing but somehow we cannot start',
+            'Don’t be afraid your life will end; be afraid that it will never begin',
+            'The most important thing to do in solving a problem is to begin',
+            'The beginning is the most important part of the work',
+            'Motivation is what gets you started. Habit is what keeps you going',
+            'Be willing to be a beginner every single morning',
+            'The only impossible journey is the one you never begin',
+            'You don’t have to be great to start, but you have to start to be great'
+        ]
+
+        const quote = document.querySelector('.quotes')
+        const btn = document.querySelector('.btn')
+        btn.onclick = function() {
+            randomQuotes()
+        }
+
+        function randomQuotes() {
+            let i = Math.floor(Math.random() * quotes.length);
+            quote.innerHTML = quotes[i]
+        }
+
+    </script>
+</body>
+</html>

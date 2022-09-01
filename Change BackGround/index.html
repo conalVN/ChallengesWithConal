@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background-Color</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <button class="btn">Picker color</button>
+    <script>
+        const tableColor = ['red', 'yellow', 'blue', 'green', 'pink', 'violet', 'white', 'black']
+        const btnColor = document.querySelector('.btn');
+        function pickColor() {
+            let i = Math.floor(Math.random() * tableColor.length);
+           document.body.style.backgroundColor = tableColor[i];
+        }
+        btnColor.onclick = function() {
+            pickColor()
+        }
+    </script>
+</body>
+</html>
