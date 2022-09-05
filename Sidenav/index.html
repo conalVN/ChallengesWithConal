@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidenav Animation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="mySide" class="sidenav">
+        <a href="#" class="closebtn" onclick="closeNav()">&times</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Client</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    <script>
+        function closeNav() {
+            document.getElementById('mySide').style.width = '0'
+        }
+        function openNav() {
+            document.getElementById('mySide').style.width = '250px'
+        }
+    </script>
+</body>
+</html>
