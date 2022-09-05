@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filter Item</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -15,7 +16,34 @@
             <button class="btn">Coffee</button>
             <button class="btn">Cake</button>
             <button class="btn">Fruit</button>
+            <span class="cart">
+                <i class='bx bx-cart-add'></i>
+                <section class="itemCart">
+                    <h6>All item choose</h6>
+                    <div class="box">
+                        <div class="box-item">
+                            <div class="box-item-img"></div>
+                            <div>
+                                <div class="box-item-name">Cappuccino</div>
+                                <p class="amount">
+                                    <i class='bx bx-minus'></i>
+                                    <input type="text" value="1" class="amount-number">
+                                    <i class='bx bx-plus'></i>
+                                </p>
+                            </div>
+                            <div>
+                                <p class="total">5$</p>
+                                <span class="trash">
+                                    <i class='bx bx-trash'></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="payment">Payment</button>
+                </section>
+            </span>
         </div>
+        <input type="text" class="input" value="" placeholder="Search. . .">
         <div class="product">        
         </div>
     </div>
