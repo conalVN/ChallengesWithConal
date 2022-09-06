@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Modal</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="app">
+        <button class="btn">Show Modal</button>
+        <div class="modal-layer">
+            <span class="close">&times;</span>
+            <div class="modal-popup">
+                <h1>Are you sure?</h1>
+                <p>All your changes will be deleted and you will no longer be able to access them</p>
+                <div class="group-btn">
+                    <button class="btn-x">Cancel</button>
+                    <button class="btn-x">Hide me</button>
+                    <button class="btn-x active">Yes I'm sure</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const openBtn = document.querySelector('.btn');
+        const closeBtn = document.querySelector('.close')
+
+        openBtn.addEventListener('click', () => {
+            document.querySelector('.modal-layer').style.display = 'block'
+        })
+        closeBtn.addEventListener('click', () => {
+            document.querySelector('.modal-layer').style.display = 'none'
+        })
+
+    </script>
+</body>
+</html>
