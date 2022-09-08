@@ -1,0 +1,13 @@
+step 1: create lens on image
+
+step 2: tính tỉ lệ giữa box-zoom & thấu kính
+
+step 3: set background image in box-zoom
+
+step 4: add event when user mousemove image 
+ - create function moveLens() {} -> x
+ - get position cursor -> set position lens
+ - calc position lens
+ - ngăn không cho ống kính ra ngoài image
+
+
