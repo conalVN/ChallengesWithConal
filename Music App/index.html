@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music chill with Conal</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <div class="app">
+        <section class="run">
+            <div class="run-heading">
+                <i class='bx bx-chevron-left'></i>
+                <i class='bx bx-timer'></i>
+            </div>
+            <div class="run-body">
+                <div class="disc"></div>
+                <input type="range" value="0" min="0" max="100" class="progress">
+            </div>
+            <div class="run-control">
+                <div class="name-song">Tuoi tre</div>
+                <p class="author-song">PX-kjs</p>
+                <div class="control">
+                    <span class="random">
+                        <i class='bx bx-git-repo-forked'></i>
+                    </span>
+                    <span class="btn-prev">
+                        <i class='bx bx-skip-previous'></i>
+                    </span>
+                    <span class="play action active">
+                        <i class='bx bx-play'></i>
+                    </span>
+                    <span class="pause action ">
+                        <i class='bx bx-pause' ></i>
+                    </span>
+                    <span class="btn-next">
+                        <i class='bx bx-skip-next'></i>
+                    </span>
+                    <span class="repeat">
+                        <i class='bx bx-repost'></i>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section class="playlist">
+            <div class="pl-heading">
+                <h4>My Playlist</h4>
+                <i class='bx bx-up-arrow icon-up active'></i>
+                <i class='bx bx-down-arrow icon-down'></i>
+            </div>
+            <div class="songs"></div>
+        </section>
+    </div>
+</body>
+</html>
