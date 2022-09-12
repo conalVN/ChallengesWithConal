@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Tip</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <div class="app">
+        <h1>Calculator Tip</h1>
+        <label for="bill">
+            Total bill amount:
+        </label>
+        <input type="number" value placeholder="Bill amount" id="bill">
+        <label for="percent">Choose your percent :
+            <input type="range" value="0" id="percent" min="0" max="100">
+            <span class="percent">0</span>
+        </label>
+
+        <button class="btn">Payment</button>
+        <p>Total amount pay is : <span class="result "></span></p>
+    </div>
+</body>
+</html>
