@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Indicator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Heading content</h1>
+        <div class="scroll">
+            <div class="scroll-bar"></div>
+        </div>
+    </header>
+
+    <section class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Iusto qui cumque delectus nam ab! Sed blanditiis deleniti, 
+        quas eaque atque dolore rerum iste laudantium consequatur architecto laboriosam inventore. 
+        Voluptatem, nesciunt.
+    </section>
+
+
+    <script>
+        window.onscroll = function() {scrollBar()}
+
+        function scrollBar() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight
+            var scroll = (winScroll / height) * 100
+
+            document.querySelector('.scroll-bar').style.width = scroll + "%"
+        }
+    </script>
+</body>
+</html>
