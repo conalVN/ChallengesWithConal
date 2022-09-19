@@ -1,0 +1,16 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+}
+h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+span {
+    color: yellow;
+}
