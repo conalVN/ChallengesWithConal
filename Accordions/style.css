@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.accordion {
+    width: 80%;
+    margin: 0 auto;
+    height: 60px;
+    line-height: 60px;
+    font-size: 2rem;
+    border: 1px solid #000;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    transition: .4s;
+}   
+.accordion:hover {
+    background: rgba(0, 0 , 0 ,.1);
+}
+.panel {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: none;
+}
+.panel.active {
+    display: block;
+}
+.see,
+.hide {
+    display: none;
+}
+.see.active ,
+.hide.active {
+    display: block;
+}

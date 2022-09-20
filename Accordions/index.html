@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordions</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="accordion">
+        <span>Section 1</span>
+        <span class="see active">+</span>
+        <span class="hide">-</span>
+    </div>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Quasi impedit dolorem minus rem natus id maiores veniam ipsa quod, 
+            assumenda cumque fugiat voluptatibus harum fugit quas optio debitis perferendis unde!
+        </p>
+    </div>
+    <div class="accordion">
+        <span>Section 2</span>
+        <span class="see active">+</span>
+        <span class="hide">-</span>
+    </div>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Quasi impedit dolorem minus rem natus id maiores veniam ipsa quod, 
+            assumenda cumque fugiat voluptatibus harum fugit quas optio debitis perferendis unde!
+        </p>
+    </div>
+    <div class="accordion">
+        <span>Section 3</span>
+        <span class="see active">+</span>
+        <span class="hide">-</span>
+    </div>
+    <div class="panel">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Quasi impedit dolorem minus rem natus id maiores veniam ipsa quod, 
+            assumenda cumque fugiat voluptatibus harum fugit quas optio debitis perferendis unde!
+        </p>
+    </div>
+
+    <script type="text/javascript" defer>
+        const accord =  document.querySelectorAll('.accordion')
+        accord.forEach(item => {
+            item.addEventListener('click', () => {
+                item.nextElementSibling.classList.toggle('active')
+                if (item.nextElementSibling.classList.contains('active')) {
+                    item.querySelector('.see').classList.remove('active')
+                    item.querySelector('.hide').classList.add('active')
+                } else {
+                    item.querySelector('.see').classList.add('active')
+                    item.querySelector('.hide').classList.remove('active')
+                }
+            })
+        })
+    </script>
+</body>
+</html>
