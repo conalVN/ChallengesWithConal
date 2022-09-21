@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountDown Timer</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Count Timer</h1>
+    <div class="timer">
+        <span class="days"></span>days
+        <span class="hours"></span> hours
+        <span class="minutes"></span> minutes
+        <span class="seconds"></span> seconds
+    </div>
+
+
+    <script>
+        const dateCountDown = new Date('Jan 18, 2023 00:00:00').getTime()
+
+        var x = setInterval(() => {
+            const now = new Date()
+            // khoảng cách current time và end time 
+            const distance = dateCountDown - now
+
+            var days = Math.floor(distance / (24 * 60 * 60 * 1000))
+            var hours = Math.floor((distance % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000))
+            var minutes = Math.floor((distance % (60 * 60 * 1000)) / (60 * 1000))
+            var seconds = Math.floor((distance % (60 * 1000)) / 1000)
+
+            document.querySelector('.days').innerText = days
+            document.querySelector('.hours').innerText = hours
+            document.querySelector('.minutes').innerText = minutes
+            document.querySelector('.seconds').innerText = seconds
+            if (distance < 0) {
+                clearInterval(x)
+                // HPBD
+            }
+        }, 1000)
+    </script>
+</body>
+</html>
