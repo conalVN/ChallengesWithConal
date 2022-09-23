@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form class="calc">
+        <h1>Your BMI</h1>
+        <label for="height">
+            kilogram (kg)
+            <input type="text" id="height" placeholder="Enter your weight">
+        </label>
+        <label for="weight">
+            meter (m)
+            <input type="text" id="weight" placeholder="Enter your height">
+        </label>
+        <button class="btnCalc">Calculator</button>
+    </form>
+    <table>
+        <h1 class="bmiOut"></h1>
+        <tr>
+            <th>Category</th>
+            <th>Criteria</th>
+        </tr>
+        <tr>
+            <td>Under weight</td>
+            <td> &#x3c;18.5 kg&#8725;m<sup>2</sup></td>
+        </tr>
+        <tr>
+            <td>Healthy weight</td>
+            <td>18.5 kg&#8725;m<sup>2</sup> - 25 kg&#8725;m<sup>2</sup></td>
+        </tr>
+        <tr>
+            <td>Obese Class 1</td>
+            <td>25 kg&#8725;m<sup>2</sup> - 30 kg&#8725;m<sup>2</sup></td>
+        </tr>
+        <tr>
+            <td>Obese Class 2</td>
+            <td>35 kg&#8725;m<sup>2</sup> - 40 kg&#8725;m<sup>2</sup></td>
+        </tr>
+        <tr>
+            <td>Obese Class 2</td>
+            <td>&#x3e; 40 kg&#8725;m<sup>2</sup></td>
+        </tr>
+    </table>
+
+
+    <script>
+        const inHeight = document.querySelector('#height')
+        const inWeight = document.querySelector('#weight')
+        document.querySelector('.btnCalc').addEventListener('click', (e) => {
+            e.preventDefault()
+            const bmi = ((inWeight.value / (inHeight.value * 2)) * 1e3).toFixed(2)
+            document.querySelector('.bmiOut').innerText = `Your BMI is: ${bmi}`
+        })
+    </script>
+</body>
+</html>
