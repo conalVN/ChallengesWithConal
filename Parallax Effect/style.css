@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.box1 {
+    width: 100%;
+    height: 100vh;
+    display: table;
+    background-color: orange;
+    background-attachment: fixed;
+    background-image: url(./images/image1.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.box2 {
+    width: 100%;
+    height: 100vh;
+    display: table;
+    background-color: violet;
+    background-attachment: fixed;
+    background-image: url(./images/image2.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.box3 {
+    width: 100%;
+    height: 100vh;
+    display: table;
+    background-color: aqua;
+    background-attachment: fixed;
+    background-image: url(./images/image3.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+h1 {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
