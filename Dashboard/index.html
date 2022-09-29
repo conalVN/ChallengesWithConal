@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- layout using grid -->
+    <div class="dashboard">
+        <div class="nav">
+            <div class="nav__user">
+                <div class="nav__user-image"></div>
+                <h3 class="nav__user-name">Conal VN</h3>
+                <p>conal.dev@gmail.com</p>
+            </div>
+            <ul class="nav__menu">
+                <li class="nav__menu-item">Dashboard</li>
+                <li class="nav__menu-item active">Expenses</li>
+                <li class="nav__menu-item">Wallets</li>
+                <li class="nav__menu-item">Summary</li>
+                <li class="nav__menu-item">Accounts</li>
+                <li class="nav__menu-item">Settings</li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="content">
+                <h1 class="content__title">Expenses</h1>
+                <p class="date">01-25 March, 2022</p>
+
+                <div class="history">
+                    <h3>Today</h3>
+                    <ul>
+                        <li>
+                            <span class="icon" style="--i: #32A7E2">
+                                <i class='bx bxs-cart'></i>
+                            </span>
+                            <div>
+                                <span class="name">Grocery</span>
+                                <span class="date">5:12 pm . Belanja di pasar</span>
+                            </div>
+                            <span class="price">-326.800</span>
+                        </li>
+                        <li>
+                            <span class="icon" style="--i: #B548C6">
+                                <i class='bx bxs-bus'></i>
+                            </span>
+                            <div>
+                                <span class="name">Transportation</span>
+                                <span class="date">08:35 pm . Naik bus umum</span>
+                            </div>
+                            <span class="price">-15.000</span>
+                        </li>
+                        <li>
+                            <span class="icon" style="--i: #FF8700">
+                                <i class='bx bxs-home'></i>
+                            </span>
+                            <div>
+                                <span class="name">Housing</span>
+                                <span class="date">04:10 pm . Bayar Listrik</span>
+                            </div>
+                            <span class="price">-185.750</span>
+                        </li>
+                    </ul>
+
+                    <h3>Monday, 23 March 2022</h3>
+                    <ul>
+                        <li>
+                            <span class="icon" style="--i: #DC3434">
+                                <i class='bx bxs-dish'></i>
+                            </span>
+                            <div>
+                                <span class="name">Food and Drinks</span>
+                                <span class="date">5:12 pm . Makan Steak</span>
+                            </div>
+                            <span class="price">-156.800</span>
+                        </li>
+                        <li>
+                            <span class="icon" style="--i: #4BA83D">
+                                <i class='bx bx-play-circle'></i>
+                            </span>
+                            <div>
+                                <span class="name">Entertainment</span>
+                                <span class="date">08:35 pm . Nonton Bioskop</span>
+                            </div>
+                            <span class="price">-35.000</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <aside class="content-spend">
+                <h1>Where your money go ?</h1>
+                <ul class="volume">
+                    <li>
+                        <span>Food and Drinks</span>                        
+                        <span>872.000</span>
+                    </li>
+                    <li>
+                        <span>Shopping</span>                        
+                        <span>1.378.000</span>
+                    </li>
+                    <li>
+                        <span>Housing</span>                        
+                        <span>928.000</span>
+                    </li>
+                    <li>
+                        <span>Transportation</span>                        
+                        <span>420.000</span>
+                    </li>
+                    <li>
+                        <span>Vehicle</span>                        
+                        <span>520.000</span>
+                    </li>
+                </ul>
+                <div class="image"></div>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>
