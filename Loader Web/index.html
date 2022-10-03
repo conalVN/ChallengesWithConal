@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="loader">
+        <span class="spinner"></span>
+    </div>
+    
+    <div class="content">
+        <h1>Title Blog</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, 
+            vitae minima. Quibusdam inventore nisi a, dignissimos optio molestiae 
+            animi quam esse recusandae officia cum non consequatur unde aut fugit suscipit!
+            <br>
+            <br>
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, 
+            vitae minima. Quibusdam inventore nisi a, dignissimos optio molestiae 
+            animi quam esse recusandae officia cum non consequatur unde aut fugit suscipit!
+            <br>
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, 
+            vitae minima. Quibusdam inventore nisi a, dignissimos optio molestiae 
+            animi quam esse recusandae officia cum non consequatur unde aut fugit suscipit!
+            <br>
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, 
+            vitae minima. Quibusdam inventore nisi a, dignissimos optio molestiae 
+            animi quam esse recusandae officia cum non consequatur unde aut fugit suscipit!
+            <br>
+            <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, 
+            vitae minima. Quibusdam inventore nisi a, dignissimos optio molestiae 
+            animi quam esse recusandae officia cum non consequatur unde aut fugit suscipit!
+        </p>
+    </div>
+
+    <script>
+        const loader = document.getElementById('loader')
+
+        window.addEventListener('load', () => {
+            setTimeout(()=> {
+                loader.style.display = 'none'
+            }, 800)
+        })
+    </script>
+</body>
+</html>
