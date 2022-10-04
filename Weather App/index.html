@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather </title>
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="shape"></div>
+    <div id="weather">
+        <input type="text" class="input" placeholder="Search. . .">
+        <p>
+            <span class="city"></span>,
+            <span class="country"></span>
+        </p>
+        <div class="temp"><span></span>&ordm;C</div>
+        <ul>
+            <li>
+                <span class="icon">
+                    <i class='bx bx-wind'></i>
+                </span>
+                <span class="wind"></span>
+            </li>
+            <li>
+                <span class="icon">
+                    <i class='bx bx-droplet'></i>
+                </span>
+                <span class="humidity"></span>
+            </li>
+            <li>
+                <span class="icon">
+                    <i class='bx bx-bullseye'></i>
+                </span>
+                <span class="visibility"></span>
+            </li>
+        </ul>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
+
+<!-- 
+    temp : độ C
+    wind : sức gió
+    humidity : độ ẩm
+ -->

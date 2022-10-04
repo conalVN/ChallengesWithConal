@@ -1,0 +1,8 @@
+weather: thời tiết
+temperature : nhiệt độ
+humidity : độ ẩm
+pressure : áp suất
+wind : tốc độ gió
+clouds : gió 
+visibility : tầm nhìn
+lastupdate : thời gian cập nhật lần cuối
