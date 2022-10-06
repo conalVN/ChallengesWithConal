@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowing Text Hover</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #000;
+        }
+        h1 {
+            font-size: 5rem;
+            color: #fff;
+        }
+        h1:hover span:nth-child(1) {
+            margin-right: 10px;
+        }
+        h1:hover span:nth-child(1)::after {
+            content: "'";
+        }
+        h1:hover span:nth-child(2) {
+            margin-left: 10px;
+        }
+        h1:hover span {
+            color: aqua;
+            text-shadow: 0 0 10px aqua,
+            0 0 20px aqua,
+            0 0 40px aqua;
+            /* 0 0 80px aqua; */
+        }
+    </style>
+</head>
+<body>
+    <h1><span>I</span> am <span> Developer</span></h1>
+</body>
+</html>
