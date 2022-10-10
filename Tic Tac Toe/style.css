@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    font-size: 1.4rem;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.app {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.robot, 
+.person {
+    position: relative;
+    display: flex;
+    column-gap: 20px;
+    text-align: center;
+}
+.user-name {
+    position: absolute;
+    top: 20%;
+    right: -80%;
+    min-width: 220px;
+    text-align: start;
+}
+.image {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.image.active {
+    background-color: aqua;
+}
+.image img {
+    max-width: 100%;
+    padding: 10px;
+}
+.person .image:hover {
+    transform: scale(1.1);
+    background-color: aqua;
+}
+.table {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    margin: 1rem;
+}
+.start,
+.reset {
+    position: absolute;
+    bottom: -1px;
+    min-width: 150px;
+    padding: 5px 20px;
+    font-size: 2rem;
+}
+.start {
+    left: 0;
+}
+.reset {
+    right: 0;
+}
+.timer {
+    position: absolute;
+    display: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+}
+.result {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.8rem;
+}
