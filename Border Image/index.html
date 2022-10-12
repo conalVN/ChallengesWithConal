@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Image</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .image {
+            width: 400px;
+            height: 300px;
+            border: 10px solid;
+            border-image: repeating-linear-gradient(30deg, #ffb87a, #ff85ad, #6b66ff 150px) 1;
+            overflow: hidden;
+        }
+        .image:hover {
+            border-image: repeating-linear-gradient(-30deg, #ffb87a, #ff85ad, #6b66ff 75px) 1;
+        }
+        .image img {
+            width: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="image">
+        <img src="https://i.pinimg.com/236x/0d/3c/fe/0d3cfef77bb48c0463e16ff1d433b05a.jpg" alt="">
+    </div>
+</body>
+</html>
