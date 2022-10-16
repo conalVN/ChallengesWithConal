@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom cursor</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            overflow-x: hidden;
+            background-color: rgb(32, 59, 84);
+        }
+        .track {
+            position: fixed;
+            transform: translate(-50, -50%);
+            width: 100px;
+            transition: all .15s;
+            pointer-events: none;
+            z-index: 999;
+        }
+        .track img {
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="track">
+        <img src="data:image/png;base64,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">
+        <!-- <img src="./icons8-ghost.gif" alt="ghost"> -->
+    </div>
+
+    <script>
+        const track = document.querySelector('.track')
+        document.body.addEventListener('mousemove', (e) => {
+            track.style.left = `${e.clientX}px`
+            track.style.top = `${e.clientY}px`
+        })
+    </script>
+</body>
+</html>
