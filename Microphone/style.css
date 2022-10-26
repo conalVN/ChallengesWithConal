@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+    background: #010101;
+}
+.mic {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+    background-color: #27c5f3;
+    transition: all .25s;
+    cursor: pointer;
+}
+.mic::before {
+    position: absolute;
+    content: "";
+    width: inherit;
+    height: inherit;
+    background-color: inherit;
+    border-radius: inherit;
+    z-index: -1;
+}
+.listening {
+    background-color: #0da9d9;
+}
+.listening::before {
+    animation: listening 1.3s infinite;
+}
+@keyframes listening {
+    from {
+        opacity: .25;
+    } to {
+        opacity: 0;
+        transform: scale(2);
+    }
+}
